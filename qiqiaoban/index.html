@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>七巧板</title>
+</head>
+<body>
+  <canvas id="qqb" width="400" height="400">
+     你的浏览器暂时不支持canvas哦！请更换高版本的浏览器浏览~
+  </canvas>
+  <script>
+    window.onload = function(){
+      var canvas = document.getElementById('qqb');
+      var context = canvas.getContext('2d');
+
+      var qqb = {
+        a: [{0: ['0px', '0px']},{1:['200px', '200px']},'rgb(99,179,202)'],
+        b: [{0: ['0px', '0px']},{1:['400px', '0px']}, 'rgb(192,230,120)'],
+        c: [{0: ['400px', '0px']},{1:['400px', '200px']}, {2:['300px','300px']}, {3:['300px','100px']},'rgb(192,230,120)'],
+        d: [{0: ['200px', '200px']},{1:['300px','100px']}, {2:['']}]
+      }
+    }
+  </script>
+</body>
+</html>
